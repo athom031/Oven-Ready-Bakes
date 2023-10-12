@@ -1,25 +1,24 @@
 import './Home.css';
-import logo from '../../logo.svg';
+import InstagramEmbed from '../Miscellaneous/InstagramEmbed';
 
 function Home() {
     return (
         <div>
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header>
+            <div>
+                Title will go here
+            </div>
+
+            <div className='horizontal-row-body'>
+                <div>
+                    Oven Ready Bakes Intro
+                </div>
+                <div>
+                    <InstagramEmbed />
+                </div>
+            </div>
         </div>
     );
 }
+
 
 export default Home;
