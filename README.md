@@ -55,7 +55,7 @@ thomaalex@thomaalex-mbp Oven-Ready-Bakes % code .
 ```
 - This should open our project in VS code.
 - [`Users/thomaalex/Desktop/Oven-Ready-Bakes/src/components/Home/Home.js`](https://github.com/athom031/Oven-Ready-Bakes/blob/main/src/components/Home/Home.js)
-    - If I change the code originally in this file, I should see these changes reflect on the home screen
+    - If I change the code originally in this file (**and save these changes**), I should see the changes reflected on the home screen
     ![Demo](https://github.com/athom031/Oven-Ready-Bakes/blob/main/public/Local_Change_Demo.png)
 
 **Adding Changes to Github**
