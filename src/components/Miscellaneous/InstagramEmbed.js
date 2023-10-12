@@ -20,18 +20,19 @@ const InstagramEmbed = () => {
         }}
       >
         <div style={{ padding: '16px' }}>
-          <a
+        <a
             href="https://www.instagram.com/ovenreadybakes/?utm_source=ig_embed&amp;utm_campaign=loading"
             style={{
-              background: '#FFFFFF',
-              lineHeight: '0',
-              padding: '0',
-              textAlign: 'center',
-              textDecoration: 'none',
-              width: '100%',
+                background: '#FFFFFF',
+                lineHeight: '0',
+                padding: '0',
+                textAlign: 'center',
+                textDecoration: 'none',
+                width: '100%',
             }}
             target="_blank"
-          >
+            rel="noreferrer"
+        >
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
               <div style={{ backgroundColor: '#F4F4F4', borderRadius: '50%', flexGrow: '0', height: '40px', margin: '0 14px 0 0', width: '40px' }}></div>
               <div style={{ display: 'flex', flexDirection: 'column', flexGrow: '1', justifyContent: 'center' }}>
@@ -91,6 +92,7 @@ const InstagramEmbed = () => {
                 href="https://www.instagram.com/ovenreadybakes/?utm_source=ig_embed&amp;utm_campaign=loading"
                 style={{ color: '#c9c8cd', fontFamily: 'Arial, sans-serif', fontSize: '14px', fontStyle: 'normal', fontWeight: 'normal', lineHeight: '17px' }}
                 target="_blank"
+                rel="noreferrer"
               >
                 ovenreadybakes
               </a>{' '}
