@@ -1,0 +1,22 @@
+/* NavBar.css */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6D5B0;
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #964F37;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+
+  nav a:hover {
+    color: #6A3526;
+    transform: scale(1.1);
+  }

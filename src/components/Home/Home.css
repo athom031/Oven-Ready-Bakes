@@ -1,0 +1,46 @@
+/* Home.css */
+.home-container {
+    background-color: #964F37;
+    text-align: center;
+    padding: 20px;
+    color: #F6D5B0;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: left;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+.summary-container {
+    margin-bottom: 40px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-text {
+    flex: 1;
+    text-align: left;
+}
+
+.instagram-embed {
+    flex: 1;
+}
