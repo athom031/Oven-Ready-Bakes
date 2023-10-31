@@ -1,5 +1,5 @@
 import './Home.css';
-import InstagramEmbed from '../Miscellaneous/InstagramEmbed';
+import InstagramEmbeding from '../Miscellaneous/InstagramEmbeding';
 
 function Home() {
     return (
@@ -13,7 +13,7 @@ function Home() {
                     Oven Ready Bakes Intro
                 </div>
                 <div>
-                    <InstagramEmbed />
+                    <InstagramEmbeding />
                 </div>
             </div>
         </div>
