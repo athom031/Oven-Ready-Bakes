@@ -1,8 +1,8 @@
 nav {
   display: flex;
+  justify-content: center;
   align-items: center;
-  background: url('${process.env.PUBLIC_URL}/assets/bread-silhouette.png') no-repeat center;
-  background-size: cover;
+  background-color: #F7DABA;
   padding: 20px;
 }
 
@@ -17,7 +17,7 @@ nav a {
   text-decoration: none;
   color: #964F37;
   font-weight: bold;
-  font-size: 18px; /* Adjust the font size as needed */
+  font-size: 1.125em; /* Adjust the font size using em units */
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
