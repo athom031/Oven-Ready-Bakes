@@ -11,8 +11,9 @@ function Home() {
                     <img src={process.env.PUBLIC_URL + '/assets/logo-transparent.png'} alt="Logo" className="logo" />
                 </div>
                 <div className="intro-text">
-                    <h2>Welcome to [Bakery Name]!</h2>
-                    <p>Short introductory text about the bakery and what makes it special.</p>
+                    <p>
+                        Browse our mouthwatering selection, place your order, and experience the joy of receiving a package filled with handcrafted delights. Our commitment to exceptional customer service ensures a seamless ordering process, making it as easy as a warm, buttery bite of our coffee cake.
+                    </p>
                 </div>
             </div>
 
