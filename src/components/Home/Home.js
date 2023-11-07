@@ -7,9 +7,6 @@ function Home() {
     return (
         <div className="home-container">
             <div className="intro-container">
-                <div className="logo-container">
-                    <img src={process.env.PUBLIC_URL + '/assets/logo-transparent.png'} alt="Logo" className="logo" />
-                </div>
                 <div className="intro-text">
                     <p>
                         Browse our mouthwatering selection, place your order, and experience the joy of receiving a package filled with handcrafted delights. Our commitment to exceptional customer service ensures a seamless ordering process, making it as easy as a warm, buttery bite of our coffee cake.

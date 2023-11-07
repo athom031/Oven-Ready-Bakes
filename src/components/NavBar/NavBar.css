@@ -1,22 +1,34 @@
-/* NavBar.css */
-
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F6D5B0;
-    padding: 20px;
-  }
+  display: flex;
+  align-items: center;
+  background: url('${process.env.PUBLIC_URL}/assets/bread-silhouette.png') no-repeat center;
+  background-size: cover;
+  padding: 20px;
+}
 
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #964F37;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.2s ease;
-  }
 
-  nav a:hover {
-    color: #6A3526;
-    transform: scale(1.1);
-  }
+.logo-container {
+  flex: 1; /* Allow the logo to take as much space as needed */
+}
+
+nav a {
+  flex: 1; /* Distribute the remaining space among the links */
+  text-align: center; /* Center the text in the available space */
+  text-decoration: none;
+  color: #964F37;
+  font-weight: bold;
+  font-size: 18px; /* Adjust the font size as needed */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #6A3526;
+  transform: scale(1.1);
+}
+
+.logo {
+  object-fit: cover; /* This will crop the video to cover the entire container */
+  height: 150px; /* Adjust the height as needed to crop the top and bottom */
+  width: 300px; /* Adjust the width as needed to crop the left and right sides */
+  transform: scale(0.75); /* Resizes the video to 75% of its original size */
+}
