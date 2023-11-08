@@ -25,12 +25,20 @@ function Home() {
                     <p>Description of the weekly Instagram posts and the bakery's journey.</p>
                 </div>
                 <div className="instagram-embed">
+
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
                         <InstagramEmbed url="https://www.instagram.com/reel/CugSmsosGPp/" maxWidth={400} />
                     </div>
                 </div>
-            </div>
 
+            </div>
+            <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
+                    <img
+                        src={process.env.PUBLIC_URL + '/assets/instagram-map.png'}
+                        alt="Instagram"
+                        className="instagram"
+                    />
+                </a>
         </div>
     );
 }

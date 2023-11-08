@@ -3,36 +3,27 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 function NavBar() {
-  const videoRef = React.useRef(null);
-
-  // Set the playback speed
-  const setPlaybackSpeed = () => {
-      if (videoRef.current) {
-          videoRef.current.playbackRate = 0.5; // Adjust the playback speed as needed
-      }
-  };
   return (
     <div>
         <nav>
             <Link to="/home">
-                <div className="logo-container">
-                    <video
-                        autoPlay
-                        loop={false}
-                        muted
-                        className="logo"
-                        onLoadedMetadata={setPlaybackSpeed} // Set the playback speed once the metadata is loaded
-                        ref={videoRef}
-                    >
-                        <source src={process.env.PUBLIC_URL + '/assets/logo-animation.mp4'} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <img
+                    src={process.env.PUBLIC_URL + '/assets/logo-transparent.svg'}
+                    alt="Logo"
+                    className="logo"
+                />
             </Link>
             <Link to="/menu">Menu</Link>
             <Link to="/order">Order</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/about">About</Link>
+            <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
+                <img
+                    src={process.env.PUBLIC_URL + '/assets/instagram-transparent.png'}
+                    alt="Instagram"
+                    className="instagram"
+                />
+            </a>
         </nav>
     </div>
   );

@@ -1,14 +1,16 @@
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #F7DABA;
-  padding: 20px;
+  /* padding: 10px 20px; Adjusted padding for a more compact layout */
 }
 
-
-.logo-container {
-  flex: 1; /* Allow the logo to take as much space as needed */
+.logo {
+  width: 225px; /* Adjust the width as needed */
+  height: 120px; /* Maintain the aspect ratio */
+  object-fit: cover;
+  align-items: center;
 }
 
 nav a {
@@ -17,8 +19,9 @@ nav a {
   text-decoration: none;
   color: #964F37;
   font-weight: bold;
-  font-size: 1.125em; /* Adjust the font size using em units */
+  font-size: 1.75em; /* Adjusted font size using em units */
   transition: color 0.3s ease, transform 0.2s ease;
+  /* padding: 10px; Adjust the padding as needed */
 }
 
 nav a:hover {
@@ -26,9 +29,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-.logo {
-  object-fit: cover; /* This will crop the video to cover the entire container */
-  height: 150px; /* Adjust the height as needed to crop the top and bottom */
-  width: 300px; /* Adjust the width as needed to crop the left and right sides */
-  transform: scale(0.75); /* Resizes the video to 75% of its original size */
+.instagram {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
 }
