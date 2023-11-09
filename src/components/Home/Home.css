@@ -1,9 +1,8 @@
-/* Home.css */
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5% 5%;
+    padding: 0.5% 5%;
     background-color: #964F37;
     text-align: center;
     color: #F7DABA;
@@ -17,12 +16,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3%; /* Adjusted margin for the top */
+    margin-top: 3%;
     padding-bottom: 100px;
 }
 
 .product-item {
-    width: 18%; /* Adjusted width for the columns */
+    width: 18%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,22 +30,16 @@
     border-radius: 10px;
     transition: all 0.3s ease;
     color: #2D4A6D;
-    background-color: #F4A261;
-    margin: 1%; /* Adjusted margin for the sides */
-    padding: 20px; /* Added padding to contain the content */
-}
-
-.product-item p {
-    font-size: 1.2em; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
+    margin: 1%;
+    padding: 20px;
 }
 
 .product-item:nth-child(odd) {
-    height: 400px; /* Adjusted height for odd items */
+    height: 400px;
 }
 
 .product-item:nth-child(even) {
-    height: 250px; /* Adjusted height for even items */
+    height: 250px;
 }
 
 .product-item h2 {
@@ -89,35 +82,57 @@ a:hover {
     transform: scale(1.1);
 }
 
+.chocolate-border {
+    width: 100%;
+    background-image: url('../../../public/assets/home-media/chocolate-border.png');
+    background-size: cover;
+    display: block;
+}
+
 .instagram-message-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 50px; /* Adjust the margin as needed */
-    background-image: url('../../../public/assets/home-media/chocolate-border.png'); /* Specify the correct path for the background image */
-    background-size: cover;
-    padding: 20px; /* Adjust the padding as needed */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #964F37;
+    color: #F7DABA;
 }
 
 .text-bubble {
+    width: 50%;
     flex: 1;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and transparency as needed */
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    margin-right: 20px; /* Adjust the margin as needed */
+    margin-right: 20px;
 }
 
 .text-bubble p {
-    font-size: 1.2em; /* Adjust the font size as needed */
-    font-weight: bold; /* Adjust the font weight as needed */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #964F37;
 }
 
 .instagram-map {
-    flex: 1;
-    text-align: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around; /* Adjust this value to control the vertical spacing */
+    padding: 20px; /* Adjust this value to control the internal padding */
+}
+
+.instagram-map p {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 40px; /* Add margin bottom to create space between the text and the image */
 }
 
 .instagram-map img {
-    max-width: 100px; /* Adjust the max-width as needed */
-    max-height: 100px; /* Adjust the max-height as needed */
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    border-radius: 10px; /* Optional: Apply border-radius for the image */
 }
