@@ -75,13 +75,27 @@ function Home() {
                     </Link>
                 ))}
             </div>
-            <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
-                <img
-                    src={process.env.PUBLIC_URL + '/assets/instagram-map.png'}
-                    alt="Instagram"
-                    className="instagram"
-                />
-            </a>
+
+
+            <div className="bottom-container" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/chocolate-border.png)` }}>
+                <div className="content-container">
+                    <div className="text-container">
+                        <div className="home-title">
+                            <h1>Our Goodest Goodies</h1>
+                        </div>
+                        {/* Add more text describing your bakery */}
+                    </div>
+                    <div className="image-container">
+                        <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src={process.env.PUBLIC_URL + '/assets/instagram-map.png'}
+                                alt="Instagram Link"
+                                className="instagram-image"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

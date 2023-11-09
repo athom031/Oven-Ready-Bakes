@@ -36,11 +36,11 @@
 }
 
 .product-item:nth-child(odd) {
-    height: 250px; /* Adjusted height for odd items */
+    height: 400px; /* Adjusted height for odd items */
 }
 
 .product-item:nth-child(even) {
-    height: 150px; /* Adjusted height for even items */
+    height: 250px; /* Adjusted height for even items */
 }
 
 .product-item h2 {
