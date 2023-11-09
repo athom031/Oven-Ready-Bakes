@@ -16,7 +16,7 @@ function Contact() {
         return (
         <div className="contact-container">
             <div className="contact-blurb">
-                <p>${contactBlurb}</p>
+                <p>{contactBlurb}</p>
             </div>
             <div className="contact-email">
                 <p>If you have any questions or inquiries, please feel free to reach out to us at <a href="mailto:info@ovenreadybakes.com">info@ovenreadybakes.com</a>.</p>
