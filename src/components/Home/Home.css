@@ -1,46 +1,84 @@
 /* Home.css */
 .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5% 5%;
     background-color: #964F37;
     text-align: center;
-    padding: 20px;
     color: #F7DABA;
 }
 
-.intro-container {
+.home-title {
+    font-size: 2em;
+}
+
+.products-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-top: 3%; /* Adjusted margin for the top */
 }
 
-.logo-container {
-    flex: 1;
-    text-align: left;
-}
-
-.logo {
-    max-width: 300px;
-}
-
-.intro-text {
-    flex: 1;
-    text-align: left;
-}
-
-.summary-container {
-    margin-bottom: 40px;
-}
-
-.social-media-container {
+.product-item {
+    width: 18%; /* Adjusted width for the columns */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #2D4A6D;
+    background-color: #F4A261;
+    margin: 1%; /* Adjusted margin for the sides */
+    padding: 20px; /* Added padding to contain the content */
 }
 
-.social-media-text {
-    flex: 1;
-    text-align: left;
+.product-item:nth-child(odd) {
+    height: 250px; /* Adjusted height for odd items */
 }
 
-.instagram-embed {
-    flex: 1;
+.product-item:nth-child(even) {
+    height: 150px; /* Adjusted height for even items */
+}
+
+.product-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+.product-item.muffins {
+    background-color: #F4A261;
+}
+
+.product-item.pies {
+    background-color: #E9C46A;
+}
+
+.product-item.dessert-of-the-month {
+    background-color: #E76F51;
+}
+
+.product-item.cookies {
+    background-color: #A39E9D;
+}
+
+.product-item.macaroons {
+    background-color: #B5838D;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6A3526;
+    transform: scale(1.1);
 }
