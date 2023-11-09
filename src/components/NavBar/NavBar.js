@@ -47,7 +47,7 @@ function NavBar() {
                 <Link to="/menu">Menu</Link>
                 <Link to="/order">Order</Link>
                 <Link to="/contact">Contact</Link>
-                <Link to="/about">About</Link>
+                {/* <Link to="/about">About</Link> */}
                 <a
                     href="https://www.instagram.com/ovenreadybakes/"
                     target="_blank"
