@@ -6,7 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import Menu from './components/Menu/Menu';
 import Order from './components/Order/Order';
-import About from './components/About/About';
+//import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 
