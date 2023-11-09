@@ -55,45 +55,41 @@ function Home() {
     };
 
     return (
-        <div className="home-container">
-            <div className="home-title">
-                <h1>Our Goodest Goodies</h1>
+        <div> 
+            <div className="home-container">
+                <div className="home-title">
+                    <h1>Our Goodest Goodies</h1>
+                </div>
+
+                <div className="products-container">
+                    {products.map((product, index) => (
+                        <Link key={index} to="/order" className={`product-item ${product.colorClass}`}
+                            onMouseEnter={() => handleMouseEnter(index)}
+                            onMouseLeave={() => handleMouseLeave(index)}>
+                            <h2>{product.title}</h2>
+                            {product.isHovered ? (
+                                <img src={process.env.PUBLIC_URL + `/assets/goodies-icons/${product.image}-hover-icon.png`} alt="Hover Icon" />
+                            ) : (
+                                <img src={process.env.PUBLIC_URL + `/assets/goodies-icons/${product.image}-icon.png`} alt="Regular Icon" />
+                            )}
+                            <p>{product.description}</p>
+                        </Link>
+                    ))}
+                </div>
             </div>
 
-            <div className="products-container">
-                {products.map((product, index) => (
-                    <Link key={index} to="/order" className={`product-item ${product.colorClass}`}
-                          onMouseEnter={() => handleMouseEnter(index)}
-                          onMouseLeave={() => handleMouseLeave(index)}>
-                        <h2>{product.title}</h2>
-                        {product.isHovered ? (
-                            <img src={process.env.PUBLIC_URL + `/assets/goodies-icons/${product.image}-hover-icon.png`} alt="Hover Icon" />
-                        ) : (
-                            <img src={process.env.PUBLIC_URL + `/assets/goodies-icons/${product.image}-icon.png`} alt="Regular Icon" />
-                        )}
-                        <p>{product.description}</p>
-                    </Link>
-                ))}
-            </div>
-
-
-            <div className="bottom-container" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/assets/chocolate-border.png)` }}>
-                <div className="content-container">
-                    <div className="text-container">
-                        <div className="home-title">
-                            <h1>Our Goodest Goodies</h1>
-                        </div>
-                        {/* Add more text describing your bakery */}
-                    </div>
-                    <div className="image-container">
-                        <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
-                            <img
-                                src={process.env.PUBLIC_URL + '/assets/instagram-map.png'}
-                                alt="Instagram Link"
-                                className="instagram-image"
-                            />
-                        </a>
-                    </div>
+                        <div className="instagram-message-container">
+                <div className="text-bubble">
+                    <p>Mission: To bake something new every week</p>
+                </div>
+                <div className="instagram-map">
+                    <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
+                        <img
+                            src={process.env.PUBLIC_URL + '/assets/home-media/instagram-map.png'}
+                            alt="Instagram Link"
+                            className="instagram-image"
+                        />
+                    </a>
                 </div>
             </div>
         </div>
