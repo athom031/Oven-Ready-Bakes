@@ -103,8 +103,8 @@ a:hover {
     padding: 40px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    margin-right: 10px; /* Adjust the right margin for horizontal spacing */
-    margin-left: 10px; /* Adjust the left margin for horizontal spacing */
+    margin-right: 10px; 
+    margin-left: 10px; 
 }
 
 .text-bubble p {
@@ -118,17 +118,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; /* Adjust this value to control the vertical spacing */
-    padding: 20px; /* Adjust this value to control the internal padding */
-    margin-right: 10px; /* Adjust the right margin for horizontal spacing */
-    margin-left: 10px; /* Adjust the left margin for horizontal spacing */
+    justify-content: space-around;
+    padding: 20px; 
+    margin-right: 10px; 
+    margin-left: 10px; 
 }
 
 .instagram-map p {
     font-size: 2em;
     font-weight: bold;
     margin-right: 10px;
-    margin-bottom: 40px; /* Add margin bottom to create space between the text and the image */
+    margin-bottom: 40px;
 }
 
 .instagram-map img {
@@ -136,53 +136,5 @@ a:hover {
     max-height: 100%;
     width: auto;
     height: auto;
-    border-radius: 10px; /* Optional: Apply border-radius for the image */
+    border-radius: 10px; 
 }
-
-/* .instagram-message-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #964F37;
-    color: #F7DABA;
-}
-
-.text-bubble {
-    width: 50%;
-    flex: 1;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.text-bubble p {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #964F37;
-}
-
-.instagram-map {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: space-around; / * Adjust this value to control the vertical spacing * /
-    padding: 20px; / * Adjust this value to control the internal padding * /
-}
-
-.instagram-map p {
-    font-size: 2em;
-    font-weight: bold;
-    margin-right: 10px;
-    margin-bottom: 40px; /  * Add margin bottom to create space between the text and the image * /
-}
-
-.instagram-map img {
-    max-width: 80%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
-    border-radius: 10px; /* Optional: Apply border-radius for the image * /
-} */
