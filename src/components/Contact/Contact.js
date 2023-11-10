@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Contact.css';
 
 function Contact() {
@@ -45,7 +45,7 @@ function Contact() {
                 onMouseLeave={() => setEmailHovered(false)}
                 >
                 <img
-                    src={process.env.PUBLIC_URL + `/assets/navbar-icons/mail${isInstagramHovered ? '-hover' : ''}-icon.png`}
+                    src={process.env.PUBLIC_URL + `/assets/navbar-icons/mail${isEmailHovered ? '-hover' : ''}-icon.png`}
                     alt="Email"
                 />
                 </div>
