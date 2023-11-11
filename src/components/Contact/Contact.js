@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
 import './Contact.css';
 
 function Contact() {
-
     const [isEmailHovered, setEmailHovered] = useState(false);
     const [isInstagramHovered, setInstagramHovered] = useState(false);
 
     const contactWelcome = `Hey there, welcome to Oven Ready Bakes!`;
-    const contactWelcomeCaption = `Feel free to reach out to us with any questions, dietary needs, or special requests!`;
+    const contactWelcomeCaption = `Feel free to reach out to us with any questions, dietary needs, or special requests`;
+
     const contactBlurb = `We're not just about baking goodies; we're all about creating heartfelt, homemade yumminess that warms your soul. `
     + `At Oven Ready, we're prepared to whip up an array of delectable treats tailored precisely to your preferences. `
     + `From fruity burst muffins to an assortment of cookies and macarons, each treat is crafted with care and love. `
@@ -26,29 +25,33 @@ function Contact() {
             </div>
 
             <div className="logo-row">
-                <div
-                className="logo"
-                id="instagram"
-                onMouseEnter={() => setInstagramHovered(true)}
-                onMouseLeave={() => setInstagramHovered(false)}
+                <a
+                    href="https://www.instagram.com/ovenreadybakes/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onMouseEnter={() => setInstagramHovered(true)}
+                    onMouseLeave={() => setInstagramHovered(false)}
+                    className="logo"
+                    id="instagram"
                 >
-                <img
+                    <img
                     src={process.env.PUBLIC_URL + `/assets/navbar-icons/instagram${isInstagramHovered ? '-hover' : ''}-icon.png`}
                     alt="Instagram"
-                />
-                </div>
+                    />
+                </a>
 
-                <div
-                className="logo"
-                id="email"
-                onMouseEnter={() => setEmailHovered(true)}
-                onMouseLeave={() => setEmailHovered(false)}
+                <a
+                    href="mailto:ovenreadybakes@gmail.com"
+                    className="logo"
+                    id="email"
+                    onMouseEnter={() => setEmailHovered(true)}
+                    onMouseLeave={() => setEmailHovered(false)}
                 >
                 <img
                     src={process.env.PUBLIC_URL + `/assets/navbar-icons/mail${isEmailHovered ? '-hover' : ''}-icon.png`}
                     alt="Email"
                 />
-                </div>
+                </a>
             </div>
 
 

@@ -41,15 +41,16 @@
     padding: 40px 40px 40px 20px;
 }
 
+p, h1 {
+    color: #964F37;
+}
 
 .contact-blurb p {
-    color:#964F37;
     font-size: 1.5vw;
     margin: 0;
 }
 
 .contact-blurb h1 {
-    color:#964F37;
     font-size: 2vw;
     font-weight: bold;
 }
@@ -62,3 +63,36 @@
     margin-right: 10px;
     margin-left: 10px;
 }
+
+.welcome-section {
+    color: #6A3526;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 1.25vw;
+}
+
+/* YourComponent.css */
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .logo img {
+    width: 40%; /* Set the width as needed */
+    height: auto; /* Set the height as needed */
+    object-fit: cover; /* Preserve aspect ratio while covering the container */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .logo img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+  }
