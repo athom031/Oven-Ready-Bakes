@@ -3,11 +3,11 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 
 function Home() {
-  const instagramMessage = `Hey there, welcome to Oven Ready! ` +  
-  `We're not just about baking goodies, we're all about creating heartfelt, homemade yumminess that warms your soul. ` + 
-  `I'm on a delightful journey to find the coziest pastries, cakes, and treats that'll make your home feel like a warm hug. ` + 
+  const instagramMessage = `Hey there, welcome to Oven Ready! ` +
+  `We're not just about baking goodies, we're all about creating heartfelt, homemade yumminess that warms your soul. ` +
+  `I'm on a delightful journey to find the coziest pastries, cakes, and treats that'll make your home feel like a warm hug. ` +
   `Every week, I'm trying out new recipes, hoping to add something special to our menu. ` +
-  `Follow our baking escapades on Instagram and be a part of our sweet story. ` + 
+  `Follow our baking escapades on Instagram and be a part of our sweet story. ` +
   `Let's bake up some magic together!`;
 
   const [products, setProducts] = useState([
@@ -15,35 +15,35 @@ function Home() {
       title: 'Muffins',
       image: 'muffin',
       description: 'Delicious freshly baked muffins for your morning delight!',
-      colorClass: 'muffins',
+      productClass: 'muffins',
       isHovered: false,
     },
     {
       title: 'Pies',
       image: 'pie',
       description: 'Indulge in our delectable selection of pies for any occasion.',
-      colorClass: 'pies',
+      productClass: 'pies',
       isHovered: false,
     },
     {
       title: 'Dessert of the Month',
       image: 'mystery-box',
       description: 'Try our special dessert of the month and treat yourself!',
-      colorClass: 'dessert-of-the-month',
+      productClass: 'dessert-of-the-month',
       isHovered: false,
     },
     {
       title: 'Cookies',
       image: 'cookie',
       description: 'Enjoy our freshly baked assortment of cookies for all tastes.',
-      colorClass: 'cookies',
+      productClass: 'cookies',
       isHovered: false,
     },
     {
       title: 'Macaroons',
       image: 'macaroon',
       description: 'Experience the delicate flavors of our handmade macaroons.',
-      colorClass: 'macaroons',
+      productClass: 'macaroons',
       isHovered: false,
     },
   ]);
@@ -72,7 +72,7 @@ function Home() {
             <Link
               key={index}
               to="/order"
-              className={`product-item ${product.colorClass}`}
+              className={`product-item ${product.productClass}`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
@@ -104,7 +104,7 @@ function Home() {
         <div className="text-bubble">
           <p>{instagramMessage}</p>
         </div>
-        
+
         <div className="instagram-map">
           <p>Come join the journey</p>
           <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
