@@ -40,10 +40,10 @@ function Home() {
       isHovered: false,
     },
     {
-      title: 'Macaroons',
-      image: 'macaroon',
-      description: 'Experience the delicate flavors of our handmade macaroons.',
-      productClass: 'macaroons',
+      title: 'Macarons',
+      image: 'macaron',
+      description: 'Experience the delicate flavors of our handmade macarons.',
+      productClass: 'macarons',
       isHovered: false,
     },
   ]);

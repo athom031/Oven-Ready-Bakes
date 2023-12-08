@@ -72,7 +72,7 @@
     background-color: #A39E9D;
 }
 
-.product-item.macaroons {
+.product-item.macarons {
     background-color: #B5838D;
 }
 
@@ -148,7 +148,7 @@ a:hover {
 
 .product-item.cookies:hover p,
 .product-item.dessert-of-the-month:hover p,
-.product-item.macaroons:hover p,
+.product-item.macarons:hover p,
 .product-item.muffins:hover p,
 .product-item.pies:hover p {
     color:  #6A3526;
