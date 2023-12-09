@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* STYLES FOR ALL SCREENS */
+
+/* Styles for phones and tablets in portrait mode */
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+
+}
+
+/* Styles for phones and tablets in landscape mode */
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+
+}
+
+/* Styles for laptops and larger screens */
+@media screen and (min-width: 1024px) {
+
+}
+
 .home-container {
     display: flex;
     flex-direction: column;
