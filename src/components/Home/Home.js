@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 function Home() {
   const instagramMessage = `Hey there, welcome to Oven Ready! ` +
   `We're not just about baking goodies, we're all about creating heartfelt, homemade yumminess that warms your soul. ` +
-  `I'm on a delightful journey to find the coziest pastries, cakes, and treats that'll make your home feel like a warm hug. ` +
-  `Every week, I'm trying out new recipes, hoping to add something special to our menu. ` +
+  `We are on a delightful journey to find the coziest pastries, cakes, and treats that'll make your home feel like a warm hug. ` +
+  `Every week, we're trying out new recipes, hoping to add something special to our menu. ` +
   `Follow our baking escapades on Instagram and be a part of our sweet story. ` +
   `Let's bake up some magic together!`;
 

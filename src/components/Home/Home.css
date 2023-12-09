@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -114,6 +116,7 @@ a:hover {
     font-size: 1.5em;
     font-weight: bold;
     /* color: #964F37; */
+    font-family: 'Montserrat', serif;
 }
 
 .instagram-map {
@@ -156,4 +159,5 @@ a:hover {
 
 .product-item p {
     color: #2D4A6D;
+    font-family: 'Montserrat', sans-serif;
 }
