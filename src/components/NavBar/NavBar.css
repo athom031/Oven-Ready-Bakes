@@ -26,8 +26,8 @@ nav a:hover {
 /* Styles for phones and tablets in portrait mode */
 @media screen and (max-width: 1023px) and (orientation: portrait) {
   .logo {
-    width: 112px;
-    height: 60px;
+    width: 150px;
+    height: 80px;
   }
 
   nav a {
