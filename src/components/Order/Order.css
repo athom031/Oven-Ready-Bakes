@@ -5,3 +5,28 @@
     padding: 20px;
     color: #F7DABA;
 }
+
+.order-form {
+    width: 100%;
+}
+
+/* Styles for phones and tablets in portrait mode */
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+    .order-form {
+        height: 280em;
+    }
+}
+
+/* Styles for phones and tablets in landscape mode */
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+    .order-form {
+        height: 250em;
+    }
+}
+
+/* Styles for laptops and larger screens */
+@media screen and (min-width: 1024px) {
+    .order-form {
+        height: 245em;
+    }
+}
