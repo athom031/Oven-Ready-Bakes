@@ -1,98 +1,109 @@
-.contact-container {
-    background-color: #FAD2B7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding: 0.5% 5%; */
-    text-align: center;
-    width: 100%;
-    height: 100%;
+/* Styles for phones and tablets in portrait mode */
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+  /* portrait styles for small screens go here */
 }
-
-.contact-blurb-container {
-    display: flex;
-    flex-direction: row;
+/* Styles for phones and tablets in landscape mode */
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+  /* landscape styles for small screens go here */
 }
+/* Styles for laptops and larger screens */
+@media screen and (min-width: 1024px) {
+  /* styles for large screens go here */
+  .contact-container {
+        background-color: #FAD2B7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
 
-.contact-blurb,
-.contact-baked-items {
-    width: 50%;
-    box-sizing: border-box;
+    .contact-blurb-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-blurb,
+    .contact-baked-items {
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .contact-baked-items img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .contact-blurb {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 20px 40px 40px; /* Top, Right, Bottom, Left */
+    }
+
+    .contact-baked-items {
+        padding: 40px 40px 40px 20px;
+    }
+
+    p, h1 {
+        color: #964F37;
+    }
+
+    .contact-blurb p {
+        font-size: 1.5vw;
+        margin: 0;
+    }
+
+    .contact-blurb h1 {
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .text-bubble {
+        flex: 1;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .welcome-section {
+        color: #6A3526;
+        font-weight: bold;
+    }
+
+    .welcome-section p {
+        font-size: 1.25vw;
+    }
+
+    /* YourComponent.css */
+
+    .logo-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .logo img {
+        width: 40%; /* Set the width as needed */
+        height: auto; /* Set the height as needed */
+        object-fit: cover; /* Preserve aspect ratio while covering the container */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .logo img:hover {
+        transform: scale(1.1); /* Scale up the image on hover */
+    }
 }
-
-.contact-baked-items img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.contact-blurb {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 40px 20px 40px 40px; /* Top, Right, Bottom, Left */
-}
-
-.contact-baked-items {
-    padding: 40px 40px 40px 20px;
-}
-
-p, h1 {
-    color: #964F37;
-}
-
-.contact-blurb p {
-    font-size: 1.5vw;
-    margin: 0;
-}
-
-.contact-blurb h1 {
-    font-size: 2vw;
-    font-weight: bold;
-}
-
-.text-bubble {
-    flex: 1;
-    padding: 40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.welcome-section {
-    color: #6A3526;
-    font-weight: bold;
-}
-
-.welcome-section p {
-    font-size: 1.25vw;
-}
-
-/* YourComponent.css */
-
-.logo-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .logo {
-    margin: 0 10px;
-    cursor: pointer;
-  }
-
-  .logo img {
-    width: 40%; /* Set the width as needed */
-    height: auto; /* Set the height as needed */
-    object-fit: cover; /* Preserve aspect ratio while covering the container */
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .logo img:hover {
-    transform: scale(1.1); /* Scale up the image on hover */
-  }
