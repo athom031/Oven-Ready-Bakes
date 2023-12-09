@@ -64,6 +64,13 @@ p, h1 {
     justify-content: center;
 }
 
+.contact-blurb {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* Styles for phones and tablets in portrait mode */
 @media screen and (max-width: 1023px) and (orientation: portrait) {
     .contact-blurb-container {
@@ -75,14 +82,6 @@ p, h1 {
     .contact-baked-items {
         width: 100%;
         box-sizing: border-box;
-    }
-
-    .contact-blurb {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* padding: 40px 20px 40px 40px; */
     }
 
     .contact-blurb p {
@@ -112,10 +111,6 @@ screen and (min-width: 1024px) {
     }
 
     .contact-blurb {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         padding: 40px 20px 40px 20px;
     }
 }
