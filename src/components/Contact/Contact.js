@@ -8,13 +8,14 @@ function Contact() {
     const contactWelcome = `Hey there, welcome to Oven Ready Bakes!`;
     const contactWelcomeCaption = `Feel free to reach out to us with any questions, dietary needs, or special requests`;
 
-    const contactBlurb = `We're not just about baking goodies; we're all about creating heartfelt, homemade yumminess that warms your soul. `
-    + `At Oven Ready, we're prepared to whip up an array of delectable treats tailored precisely to your preferences. `
-    + `From fruity muffins to an assortment of cookies and macarons, each treat is crafted with care and love. `
-    + `Browse our selection, place your order, and experience the joy of receiving a package filled with handcrafted delights. `
-    + `Our commitment to exceptional customer service ensures a seamless ordering process. If you have any dietary needs, special requests, or questions, please reach out to us via email or Instagram. `
-    + `Join us on our baking escapades on Instagram and be a part of our sweet story. `
-    + `Let's bake up some magic together!`
+    const contactBlurb = [
+        `We're not just about baking goodies; we're all about creating heartfelt, homemade yumminess that warms your soul.`,
+        `At Oven Ready, we're prepared to whip up an array of delectable treats tailored precisely to your preferences. From fruity muffins to an assortment of cookies and macarons, each treat is crafted with care and love.`,
+        `Browse our selection, place your order, and experience the joy of receiving a package filled with handcrafted delights.`,
+        `Our commitment to exceptional customer service ensures a seamless ordering process. If you have any dietary needs, special requests, or questions, please reach out to us via email or Instagram.`,
+        `Join us on our baking escapades on Instagram and be a part of our sweet story.`,
+        `Let's bake up some magic together!`
+    ];
 
         return (
         <div className="contact-container">
@@ -58,9 +59,12 @@ function Contact() {
             <div className="contact-blurb-container">
                 <div className="contact-blurb">
                     <div className="text-bubble">
-                        <p>
-                            {contactBlurb}
-                        </p>
+                        {contactBlurb.map((line, index) => (
+                            <React.Fragment key={index}>
+                            <p>{line}</p>
+                            {index !== contactBlurb.length - 1 && <br />}
+                            </React.Fragment>
+                        ))}
                     </div>
                 </div>
                 <div className = "contact-baked-items">
