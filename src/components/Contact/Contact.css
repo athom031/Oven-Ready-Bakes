@@ -80,6 +80,9 @@ p, h1 {
     .contact-blurb {
         font-weight: bold;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* padding: 40px 20px 40px 40px; */
     }
 
     .contact-blurb p {
@@ -113,11 +116,21 @@ screen and (min-width: 1024px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 40px 20px 40px 40px;
+        padding: 40px 20px 40px 20px;
     }
+}
 
+/* Styles for phones and tablets in landscape mode */
+@media screen and (max-width: 1023px) and (orientation: landscape) {
     .contact-blurb p {
         font-size: 1.15vw;
+        margin: 0;
+    }
+}
+/* Styles for laptops and larger screens */
+@media screen and (min-width: 1024px) {
+    .contact-blurb p {
+        font-size: 1.45vw;
         margin: 0;
     }
 }
