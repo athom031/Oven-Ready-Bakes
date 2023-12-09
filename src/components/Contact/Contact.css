@@ -62,7 +62,6 @@ p, h1 {
 .logo-row {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 6px; */
 }
 
 /* Styles for phones and tablets in portrait mode */
@@ -93,8 +92,11 @@ p, h1 {
     }
 }
 
+@media
 /* Styles for phones and tablets in landscape mode */
-@media screen and (max-width: 1023px) and (orientation: landscape) {
+screen and (max-width: 1023px) and (orientation: landscape),
+/* Styles for laptops and larger screens */
+screen and (min-width: 1024px) {
     .contact-blurb-container {
         display: flex;
         flex-direction: row;
@@ -116,33 +118,6 @@ p, h1 {
 
     .contact-blurb p {
         font-size: 1.15vw;
-        margin: 0;
-    }
-}
-
-/* Styles for laptops and larger screens */
-@media screen and (min-width: 1024px) {
-    .contact-blurb-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contact-blurb,
-    .contact-baked-items {
-        width: 50%;
-        box-sizing: border-box;
-    }
-
-    .contact-blurb {
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 40px 20px 40px 40px;
-    }
-
-    .contact-blurb p {
-        font-size: 1.5vw;
         margin: 0;
     }
 }
