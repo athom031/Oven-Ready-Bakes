@@ -50,6 +50,21 @@ p, h1 {
     color: #964F37;
 }
 
+.welcome-section {
+    color: #6A3526;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 2vw;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 /* Styles for phones and tablets in portrait mode */
 @media screen and (max-width: 1023px) and (orientation: portrait) {
     .contact-blurb-container {
@@ -73,19 +88,8 @@ p, h1 {
         margin: 0;
     }
 
-    .welcome-section {
-        color: #6A3526;
-        font-weight: bold;
-    }
-
     .welcome-section p {
         font-size: 3vw;
-    }
-
-    .logo-row {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5px;
     }
 }
 
@@ -114,21 +118,6 @@ p, h1 {
         font-size: 1.5vw;
         margin: 0;
     }
-
-    .welcome-section {
-        color: #6A3526;
-        font-weight: bold;
-    }
-
-    .welcome-section p {
-        font-size: 1.25vw;
-    }
-
-    .logo-row {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
 }
 
 /* Styles for laptops and larger screens */
@@ -155,21 +144,5 @@ p, h1 {
     .contact-blurb p {
         font-size: 1.5vw;
         margin: 0;
-    }
-
-
-    .welcome-section {
-        color: #6A3526;
-        font-weight: bold;
-    }
-
-    .welcome-section p {
-        font-size: 1.25vw;
-    }
-
-    .logo-row {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
     }
 }
