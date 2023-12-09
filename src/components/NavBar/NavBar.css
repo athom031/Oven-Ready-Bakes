@@ -39,6 +39,10 @@ nav a:hover {
     width: 112px;
     height: 60px;
   }
+
+  nav a {
+    font-size: 1.25em;
+  }
 }
 
 /* Styles for phones and tablets in landscape mode */
