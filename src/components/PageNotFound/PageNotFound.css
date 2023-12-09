@@ -14,3 +14,38 @@
 @media screen and (min-width: 1024px) {
 
 }
+
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f7daba;
+    color: #964f37;
+  }
+
+  .not-found-container h1 {
+    font-size: 6em;
+    margin-bottom: 0.5em;
+  }
+
+  .not-found-container p {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .home-link {
+    font-size: 1.5em;
+    color: #964f37;
+    text-decoration: none;
+    border: 2px solid #964f37;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+  }
+
+  .home-link:hover {
+    background-color: #964f37;
+    color: #f7daba;
+  }
