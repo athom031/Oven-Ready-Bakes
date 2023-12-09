@@ -7,11 +7,6 @@ nav {
   background-color: #F7DABA;
 }
 
-.logo {
-  object-fit: cover;
-  align-items: center;
-}
-
 nav a {
   flex: 1;
   text-align: center;
@@ -27,11 +22,6 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-.instagram {
-  width: 50px;
-  height: auto;
-}
-
 
 /* Styles for phones and tablets in portrait mode */
 @media screen and (max-width: 1023px) and (orientation: portrait) {
@@ -43,6 +33,11 @@ nav a:hover {
   nav a {
     font-size: 1.25em;
   }
+
+  .instagram {
+    width: 30px;
+    height: auto;
+  }
 }
 
 /* Styles for phones and tablets in landscape mode */
@@ -51,6 +46,16 @@ nav a:hover {
     width: 169px;
     height: 90px;
   }
+
+  .instagram {
+    width: 50px;
+    height: auto;
+  }
+
+  .logo {
+    object-fit: cover;
+    align-items: center;
+  }
 }
 
 /* Styles for laptops and larger screens */
@@ -58,5 +63,15 @@ nav a:hover {
   .logo {
     width: 225px;
     height: 120px;
+  }
+
+  .instagram {
+    width: 50px;
+    height: auto;
+  }
+
+  .logo {
+    object-fit: cover;
+    align-items: center;
   }
 }
