@@ -1,20 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* STYLES FOR ALL SCREENS */
-
-/* Styles for phones and tablets in portrait mode */
-@media screen and (max-width: 1023px) and (orientation: portrait) {
-
-}
-
-/* Styles for phones and tablets in landscape mode */
-@media screen and (max-width: 1023px) and (orientation: landscape) {
-
-}
-
-/* Styles for laptops and larger screens */
-@media screen and (min-width: 1024px) {
-
+.home-title h1 {
+    color: #F7DABA;
 }
 
 .home-container {
@@ -27,52 +15,17 @@
     color: #F7DABA;
 }
 
-.home-title {
-    font-size: 2em;
-}
-
-.products-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3%;
-    padding-bottom: 100px;
+.product-item p {
     color: #2D4A6D;
+    font-family: 'Montserrat', sans-serif;
 }
 
-
-
-.product-item {
-    width: 18%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    color: #2D4A6D;
-    margin: 1%;
-    padding: 20px;
-}
-
-.product-item:nth-child(odd) {
-    height: 400px;
-}
-
-.product-item:nth-child(even) {
-    height: 250px;
-}
-
-.product-item h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.product-item img {
-    max-width: 80px;
-    max-height: 80px;
-    margin-bottom: 10px;
+.product-item.cookies:hover p,
+.product-item.dessert-of-the-month:hover p,
+.product-item.macarons:hover p,
+.product-item.muffins:hover p,
+.product-item.pies:hover p {
+    color:  #6A3526;
 }
 
 .product-item.muffins {
@@ -109,8 +62,155 @@ a:hover {
     background-image: url('../../../public/assets/home-media/chocolate-border.png');
     background-size: cover;
     display: block;
+    height: 0;
+    padding-bottom: 15%;
+    background-position: center;
 }
 
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    padding-bottom: 100px;
+    color: #2D4A6D;
+}
+
+.product-item {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #2D4A6D;
+    margin: 1%;
+    padding: 20px;
+}
+
+.product-item:nth-child(odd) {
+    height: 400px;
+}
+
+.product-item:nth-child(even) {
+    height: 250px;
+}
+
+.product-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+.instagram-message-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #964F37;
+    color: #F7DABA;
+}
+.text-bubble {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.text-bubble p {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Montserrat', serif;
+}
+.instagram-map {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.instagram-map p {
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    color: #F7DABA;
+    text-align: center;
+}
+.instagram-map img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styles for phones and tablets in portrait mode */
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+    .home-title {
+        font-size: 2em;
+    }
+
+    .products-container {
+        flex-direction: column; /* Change the direction to column */
+        padding-bottom: 20px;
+    }
+    .product-item {
+        width: 100%; /* Make the items take up the full width of the container */
+        height: auto; /* Reset the height */
+    }
+    .product-item:nth-child(odd),
+    .product-item:nth-child(even) {
+        height: auto; /* Reset the height */
+    }
+
+    .instagram-message-container {
+        flex-direction: column;
+    }
+    .text-bubble, .instagram-map {
+        margin-bottom: 0px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .text-bubble p {
+        font-size: .75em;
+    }
+}
+
+/* Styles for phones and tablets in landscape mode */
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+    .home-title {
+        font-size: 2.15em;
+    }
+
+    .text-bubble p {
+        font-size: .75em;
+    }
+}
+
+/* Styles for laptops and larger screens */
+@media screen and (min-width: 1024px) {
+    .home-title {
+        font-size: 2.25em;
+    }
+
+    .text-bubble p {
+        font-size: 1.15em;
+    }
+}
+/*
 .instagram-message-container {
     display: flex;
     align-items: center;
@@ -132,7 +232,6 @@ a:hover {
 .text-bubble p {
     font-size: 1.5em;
     font-weight: bold;
-    /* color: #964F37; */
     font-family: 'Montserrat', serif;
 }
 
@@ -152,6 +251,8 @@ a:hover {
     font-weight: bold;
     margin-right: 10px;
     margin-bottom: 40px;
+    color: #F7DABA;
+    text-align: center;
 }
 
 .instagram-map img {
@@ -160,21 +261,4 @@ a:hover {
     width: auto;
     height: auto;
     border-radius: 10px;
-}
-
-.home-title h1 {
-    color: #F7DABA;
-}
-
-.product-item.cookies:hover p,
-.product-item.dessert-of-the-month:hover p,
-.product-item.macarons:hover p,
-.product-item.muffins:hover p,
-.product-item.pies:hover p {
-    color:  #6A3526;
-}
-
-.product-item p {
-    color: #2D4A6D;
-    font-family: 'Montserrat', sans-serif;
-}
+} */

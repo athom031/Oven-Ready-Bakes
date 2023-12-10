@@ -3,13 +3,14 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 
 function Home() {
-  const instagramMessage = `Hey there, welcome to Oven Ready! ` +
-  `We're not just about baking goodies, we're all about creating heartfelt, homemade yumminess that warms your soul. ` +
-  `We are on a delightful journey to find the coziest pastries, cakes, and treats that'll make your home feel like a warm hug. ` +
-  `Every week, we're trying out new recipes, hoping to add something special to our menu. ` +
-  `Follow our baking escapades on Instagram and be a part of our sweet story. ` +
-  `Let's bake up some magic together!`;
-
+  const instagramMessage = [
+    `Hey there, welcome to Oven Ready!`,
+    `We're not just about baking goodies, we're all about creating heartfelt, homemade yumminess that warms your soul.`,
+    `We are on a delightful journey to find exciting pastries, cakes, and treats that'll make your home feel like a cozy hug.`,
+    `Every week, we're trying out new recipes, hoping to add something special to our menu.`,
+    `Follow our baking escapades on Instagram and be a part of our sweet story.`,
+    `Let's bake up some magic together!`
+  ]
   const [products, setProducts] = useState([
     {
       title: 'Muffins',
@@ -102,11 +103,18 @@ function Home() {
 
       <div className="instagram-message-container">
         <div className="text-bubble">
-          <p>{instagramMessage}</p>
+          <div className="text-bubble">
+            {instagramMessage.map((line, index) => (
+                <React.Fragment key={index}>
+                <p>{line}</p>
+                {index !== instagramMessage.length - 1 && <br />}
+                </React.Fragment>
+            ))}
+          </div>
         </div>
 
         <div className="instagram-map">
-          <p>Come join the journey</p>
+          <p>Come join the journey!</p>
           <a href="https://www.instagram.com/ovenreadybakes/" target="_blank" rel="noopener noreferrer">
             <img
             src={process.env.PUBLIC_URL + '/assets/home-media/instagram-map.png'}
