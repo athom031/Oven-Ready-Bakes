@@ -103,14 +103,12 @@ function Home() {
 
       <div className="instagram-message-container">
         <div className="text-bubble">
-          <div className="text-bubble">
-            {instagramMessage.map((line, index) => (
-                <React.Fragment key={index}>
-                <p>{line}</p>
-                {index !== instagramMessage.length - 1 && <br />}
-                </React.Fragment>
-            ))}
-          </div>
+          {instagramMessage.map((line, index) => (
+              <React.Fragment key={index}>
+              <p>{line}</p>
+              {index !== instagramMessage.length - 1 && <br />}
+              </React.Fragment>
+          ))}
         </div>
 
         <div className="instagram-map">
